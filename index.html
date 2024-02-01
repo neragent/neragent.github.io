@@ -6,10 +6,10 @@
         body {
             font-family: Arial, sans-serif;
         }
-        h1 {
+        h1, h2 {
             text-align: center;
         }
-        img {
+        img, .pdf-image {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -25,29 +25,39 @@
             justify-content: center;
         }
         .video-container video {
-            flex: 0 0 45%;
-            max-width: 45%;
+            flex: 0 0 20%; /* 调整视频窗口大小 */
+            max-width: 20%;
             margin: 2.5%;
         }
     </style>
 </head>
 <body>
     <h1>NERagent:Never-Ending Embodied Robot Learning</h1>
-    <img src="./open the top drawer 21 Ours.png" alt="open the top drawer 21 Ours.png">
+    <h2>Overview</h2> <!-- 添加小标题 -->
+    <img class="pdf-image" src="./your_image.jpg" alt="Your PDF Image"> <!-- 插入图片，注意将你的 PDF 图片转换为 JPG 或 PNG 格式 -->
     <p>
         这是一段描述文字。你可以在这里添加关于 "NERAGENT" 的详细信息和描述。
     </p>
+    <p>这是第一行视频的描述。</p> <!-- 添加视频描述 -->
     <div class="video-container">
         <video src="./video/close_door_w20000_s7_succ.mp4" controls></video>
         <video src="your_video_2.mp4" controls></video>
         <video src="your_video_3.mp4" controls></video>
         <video src="your_video_4.mp4" controls></video>
+    </div>
+    <p>这是第二行视频的描述。</p> <!-- 添加视频描述 -->
+    <div class="video-container">
         <video src="your_video_5.mp4" controls></video>
         <video src="your_video_6.mp4" controls></video>
         <video src="your_video_7.mp4" controls></video>
         <video src="your_video_8.mp4" controls></video>
+    </div>
+    <p>这是第三行视频的描述。</p> <!-- 添加视频描述 -->
+    <div class="video-container">
         <video src="your_video_9.mp4" controls></video>
         <video src="your_video_10.mp4" controls></video>
+        <video src="your_video_11.mp4" controls></video>
+        <video src="your_video_12.mp4" controls></video>
     </div>
 </body>
 </html>
