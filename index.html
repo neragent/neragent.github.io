@@ -26,12 +26,12 @@
         }
         .video-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* 强制所有项目都在一行内 */
             justify-content: center;
         }
         .video-container video {
-            flex: 0 0 20%; /* 调整视频窗口大小 */
-            max-width: 30%;
+            flex: 0 0 auto; /* 调整视频窗口大小 */
+            max-width: 30%; /* 你可以自己调整这个值 */
             margin: 2.5%;
         }
     </style>
