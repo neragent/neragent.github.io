@@ -62,6 +62,7 @@
         }
         .abstract{
             width: 60%; 
+            font-size: 16px
         }
         .video-section {
             text-align: left;
@@ -72,11 +73,12 @@
             flex-wrap: wrap; /* 当空间不足时，子元素会换行显示 */
             justify-content: center;
         }
-        .video-task h4 {
-            width: 100%; /* 标题占据页面0.5宽度的最左端 */
-            text-align: left;
+        real_video {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 32%; /* 你可以自己调整这个值 */
         }
-        
     </style>
 
     
@@ -100,28 +102,28 @@
 
         <h3>Real-world Videos</h3>
         <div class="video-section">
-            <div class="video-task">
+            <div class="real_video">
                 <video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/3.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/4.mp4" autoplay controls loop muted ></video>
             </div>
             
-            <div class="video-task">
+            <div class="real_video">
                 <video src="./video/real_robot/5.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/6.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/7.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/8.mp4" autoplay controls loop muted ></video>
             </div>
 
-            <div class="video-task">
+            <div class="real_video">
                 <video src="./video/real_robot/9.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/10.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/11.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/12.mp4" autoplay controls loop muted ></video>
             </div>
             
-            <div class="video-task">
+            <div class="real_video">
                 <video src="./video/real_robot/13.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/14.mp4" autoplay controls loop muted ></video>
             </div>
