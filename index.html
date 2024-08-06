@@ -73,6 +73,16 @@
             flex-wrap: wrap; /* 当空间不足时，子元素会换行显示 */
             justify-content: center;
         }
+        
+        real-video {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 32%; /* 你可以自己调整这个值 */
+        }
+        .real-video-section {
+            text-align: left;
+        }
         .real-video-task {
             margin-top: 20px;
             display: flex; /* 使视频排成一行 */
@@ -102,7 +112,7 @@
         </p>
 
         <h3>Real-world Videos</h3>
-        <div class="video-section">
+        <div class="real-video-task">
             <div class="real-video-task">
                 <video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video>
