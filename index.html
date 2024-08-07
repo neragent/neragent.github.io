@@ -81,16 +81,19 @@
             justify-content: center;
         }
         
-        .scroll-container {
-            overflow-x: auto;
-            white-space: nowrap;
+        .scroll-container .video-wrapper {
+            display: inline-block;
+            width: 50%; /* 每行2个视频 */
+            box-sizing: border-box;
+        }
+        .scroll-container .video-wrapper video {
             width: 100%;
         }
-        .scroll-container video {
-            display: inline-block;
-            width: 25%; /* 每行7个视频 */
-            margin: 5px;
+        .scroll-container .video-row {
+            display: flex;
+            flex-wrap: nowrap;
         }
+        
         .scroll-container-2 video {
             display: inline-block;
             width:32%; /* 每行10个视频 */
@@ -135,17 +138,30 @@
         <div class="video-section">
             <h2>视频部分</h2>
             <div class="scroll-container">
-                <!-- 第一行视频 -->
-                <video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/6.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/9.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/13.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/14.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/3.mp4" autoplay controls loop muted ></video>
-                <!-- 添加更多视频 -->
+
+                <div class="video-row">
+                    <div class="video-wrapper"><video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/6.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                </div>
+                <div class="video-row">
+                    <div class="video-wrapper"><video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/6.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video></div>
+                    <div class="video-wrapper"><video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video></div>
+                </div>
+
             </div>
-            <div class="scroll-container">
+<!--             <div class="scroll-container">
                 <!-- 第二行视频 -->
                 <video src="./video/real_robot/8.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/10.mp4" autoplay controls loop muted ></video>
@@ -155,7 +171,7 @@
                 <video src="./video/real_robot/12.mp4" autoplay controls loop muted ></video>
                 <video src="./video/real_robot/7.mp4" autoplay controls loop muted ></video>
                 <!-- 添加更多视频 -->
-            </div>
+            </div> -->
         </div>
 
         <h2>Abstract</h2> 
@@ -375,6 +391,11 @@
 
         </div>
     </div>
-
+<style>
+    #myVideo {
+        height: auto;
+        object-fit: cover; /* 使视频填满容器，去除黑边 */
+    }
+</style>
 </body>
 </html>
