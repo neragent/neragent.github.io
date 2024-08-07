@@ -177,14 +177,29 @@
 
 
 
-         <p class="describe">
-             We consider a practical challenging robot learning problem, <em>i.e.</em>, <u>N</u>ever-ending <u>B</u>ehavior-cloning <u>R</u>obot <u>L</u>earning (NBRL), where an agent can perform continual 
+         <p class="abstract">
+            Relying on multi-modal observations, embodied robots could perform multiple robotic manipulation tasks in unstructured real-world environments. However, most 
+             language-conditioned behavior-cloning agents still face existing long-standing chal4 lenges, <em>i.e.</em>, 3D scene representation and human-level task learning, when adapting 
+             into new sequential tasks in practical scenarios. We here investigate these above 
+             challenges with NBAgent in embodied robots, a pioneering language-conditioned 
+             <u>N</u>ever-ending <u>B</u>ehavior-cloning <u>Agent</u>. It can continually learn observation knowledge edge of novel 3D scene semantics and robot manipulation skills from skill-shared 
+             and skill-specific attributes, respectively. Specifically, we propose a skill-shared 
+             semantic rendering module and a skill-shared representation distillation module to 
+             effectively learn 3D scene semantics from skill-shared attribute, further tackling 3D 
+             scene representation overlooking. Meanwhile, we establish a skill-specific evolving 
+             planner to perform manipulation knowledge decoupling, which can continually 
+             embed novel skill-specific knowledge like human from latent and low-rank space. 
+             Finally, we design a never-ending embodied robot manipulation benchmark, and 
+             expensive experiments demonstrate the significant performance of our method.
+
+             
+<!--              We consider a practical challenging robot learning problem, <em>i.e.</em>, <u>N</u>ever-ending <u>B</u>ehavior-cloning <u>R</u>obot <u>L</u>earning (NBRL), where an agent can perform continual 
              learning on successive behavior-cloning manipulation tasks and counteract catastrophic forgetting from learned skills. We here investigate this problem with NBAgent in embodied robots, a pioneering language-conditioned 
-            <u>N</u>ever-ending <u>B</u>ehavior-cloning <u>Agent</u>.
+            <u>N</u>ever-ending <u>B</u>ehavior-cloning <u>Agent</u>. -->
         </p>
         <h2>Overview</h2> 
         <img src="./framework.jpg" >
-        <p class="abstract">
+        <p class="abstract_full">
             Overview of the proposed <strong>NBAgent</strong>. It consists of a <strong>skill-shared semantic rendering module</strong> and a skill-shared representation distillation loss to transfer skill-shared knowledge on semantics of 3D scenes, and a <strong>skill-specific evolving planner</strong> to learn skill-specific knowledge.
         </p>
 
