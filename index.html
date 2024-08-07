@@ -56,14 +56,7 @@
             margin-bottom: -40px; /* 调整这个值以改变图片与下方文字的距离 */
             width: 100%; /* 你可以自己调整这个值 */
         }
-        img2 {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: -40px; /* 调整这个值以改变图片与上方文字的距离 */
-            margin-bottom: -40px; /* 调整这个值以改变图片与下方文字的距离 */
-            width: 70%; /* 你可以自己调整这个值 */
-        }
+
         video {
             display: block;
             margin-left: auto;
@@ -81,6 +74,11 @@
         }
         .abstract{
             width: 60%; 
+            font-size: 20px;
+            line-height:24px;  
+        }
+        .describe{
+            width: 80%; 
             font-size: 20px;
             line-height:24px;  
         }
@@ -241,9 +239,12 @@
         <p class="abstract">
         Visualization of rendering results in our SSR module. RGB GT denotes the color ground truth, and Semantics GT represents the semantics ground truth extracted by Stable Diffusion model. RGB RD and Semantics RD are the rendering novel view and semantic feature.
         </p>
-        <img2 src="./video/visual2.jpg" >
+        <img src="./video/visual2.jpg" style="width: 70%;">
         
         <h2>Simulation Videos</h2> 
+        <p class="describe">
+         We design two NBRL benchmark datasets using RLBench, called Kitchen and Living Room. In particular, we assemble Kitchen by gathering 10 skills that are pertinent to kitchen settings, and we construct Living Room, which includes 12 skills that are related to living room situations. Each skill includes a training set of 20 episodes and a test set of 25 episodes
+        </p>
         <div class="video-section">
             <h3>Kitchen</h3>
             <h4>close microwave</h4> <!-- 添加视频描述 -->
