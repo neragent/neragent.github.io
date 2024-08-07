@@ -109,9 +109,9 @@
         }
         .scroll-container video {
             display: inline-block;
-            width: 360px; /* 每行3个视频 */
+            width: 300px; /* 每行3个视频 */
             margin: 5px;
-            height: 450px; /* 设置视频高度 */
+            height: 400px; /* 设置视频高度 */
         }
         
         .video-wrapper {
@@ -176,77 +176,7 @@
         
 
 
-        <div class="video-section">
-<!--             <h2>Real-world Videos</h2> -->
-<!--             <p class="describe">
-            To verify the effectiveness of our method on real-wolrd robot, we conduct somw experiments on a UR5e robot with a parallel gripper, and collect RGB-D observation by utilizing a front RGB-D camera. 
-            We then design five manipulation tasks to verify the effectiveness of our never-ending method, including stack blocks, place bottles, put block in box, place can, and put bottle in box. 
-            Each task has at least two variations, totaling 13 variations. 
-            To simulate the never-ending behavior-cloning scenario, we conduct a ‘1-1’ setting, where the agent learns 5 skills by five times. 
-            </p> -->
-            <div class="scroll-container">
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place bottles“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/1.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place bottles“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/2.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place bottles“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/6.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“put bottle in box“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/9.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“put bottle in box“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/13.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“put bottle in box“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/14.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place can“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/3.mp4" autoplay controls loop muted ></video>
-                </div> 
-            </div>
 
-            <div class="scroll-container">
-                <!-- 第二行视频 -->
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“put block in box“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/4.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“put block in box“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/5.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“put block in box“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/12.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“stack blocks“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/8.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“stack blocks“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/10_cover.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“stack blocks“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/11.mp4" autoplay controls loop muted ></video>
-                </div>
-                <div class="video-wrapper">
-                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“place can“</em></p>
-                    <video class="accelerated-video" src="./video/real_world/7.mp4" autoplay controls loop muted ></video>
-                </div> 
-            </div>
-        </div>
          <p class="describe">
              We consider a practical challenging robot learning problem, <em>i.e.</em>, <u>N</u>ever-ending <u>B</u>ehavior-cloning <u>R</u>obot <u>L</u>earning (NBRL), where an agent can perform continual 
              learning on successive behavior-cloning manipulation tasks and counteract catastrophic forgetting from learned skills. We here investigate this problem with NBAgent in embodied robots, a pioneering language-conditioned 
@@ -317,6 +247,78 @@
         Visualization of rendering results in our SSR module. RGB GT denotes the color ground truth, and Semantics GT represents the semantics ground truth extracted by Stable Diffusion model. RGB RD and Semantics RD are the rendering novel view and semantic feature.
         </p>
         <img src="./video/visual2.jpg" style="width: 60%; margin-bottom: 40px;">
+        
+        <div class="video-section">
+            <h2>Real-world Videos</h2>
+            <p class="describe">
+            To verify the effectiveness of our method on real-wolrd robot, we conduct somw experiments on a UR5e robot with a parallel gripper, and collect RGB-D observation by utilizing a front RGB-D camera. 
+            We then design five manipulation tasks to verify the effectiveness of our never-ending method, including stack blocks, place bottles, put block in box, place can, and put bottle in box. 
+            Each task has at least two variations, totaling 13 variations. 
+            To simulate the never-ending behavior-cloning scenario, we conduct a ‘1-1’ setting, where the agent learns 5 skills by five times. 
+            </p>
+            <div class="scroll-container">
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place bottles“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/1.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place bottles“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/2.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place bottles“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/6.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“put bottle in box“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/9.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“put bottle in box“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/13.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“put bottle in box“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/14.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; text-align: center; font-size: 22px;"><em>“place can“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/3.mp4" autoplay controls loop muted ></video>
+                </div> 
+            </div>
+
+            <div class="scroll-container">
+                <!-- 第二行视频 -->
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“put block in box“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/4.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“put block in box“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/5.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“put block in box“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/12.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“stack blocks“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/8.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“stack blocks“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/10_cover.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“stack blocks“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/11.mp4" autoplay controls loop muted ></video>
+                </div>
+                <div class="video-wrapper">
+                    <p style="margin-bottom: 2px; margin-top: 6px; text-align: center; font-size: 22px;"><em>“place can“</em></p>
+                    <video class="accelerated-video" src="./video/real_world/7.mp4" autoplay controls loop muted ></video>
+                </div> 
+            </div>
+        </div>
         
         <h2>Simulation Videos</h2> 
         <p class="describe">
