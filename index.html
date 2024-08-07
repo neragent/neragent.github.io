@@ -120,9 +120,11 @@
         <div class="real-video-section">
             <h4>place bottle</h4>
             <div class="real-video-task">
-                <video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video>
-                <video src="./video/real_robot/6.mp4" autoplay controls loop muted ></video>
+                <video id="myVideo" controls>
+                    <video src="./video/real_robot/1.mp4" autoplay controls loop muted ></video>
+                    <video src="./video/real_robot/2.mp4" autoplay controls loop muted ></video>
+                    <video src="./video/real_robot/6.mp4" autoplay controls loop muted ></video>
+                </video>
             </div>
             
             <h4>place bottle in box</h4>
@@ -323,5 +325,9 @@
             </div>
 
         </div>
+    </div>
+    <script>
+        document.getElementById('myVideo').playbackRate = 2;
+    </script>
 </body>
 </html>
